@@ -48,6 +48,8 @@ namespace NetCoreMVCMiddleware
             app.UseMiddleware<LogMiddleware>();
             app.UseMiddleware<ExceptionMiddleware>();
 
+            app.UseLog();
+
             app.UseRouting();
 
             app.UseAuthorization();
